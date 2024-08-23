@@ -1,8 +1,5 @@
 #!/bin/bash
-ssh_try=$(ssh node_01)
-if [ $? -ne 0 ]; then
-    exit 0
-else
+
+if  ssh node_01 ;then
     exit 1 
 fi
-
