@@ -1,24 +1,44 @@
 {
-    "title": "Let them burn  ",
-    "description": "Erase the hole operaiting system",
-    "details": {
-      "intro": {
-        "text": "intro.md",
-        "background": "setup.sh"
-      },
-      "steps": [
-        {
-          "title": "Lets show them who relly is in control",
-          "text": "step1/text.md",
-          "verify": "step1/verify.sh"
-        }
-      ],
-      "finish": {
-        "text": "finish.md"
-      }
+  "title": "Learning Through Self-destruction",
+    "description": "Embrace chaos in Linux and learn from your mistakes—because sometimes you have to break it to make it!",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
     },
-    "backend": {
-      "imageid": "kubernetes-kubeadm-2nodes"
-
+    "steps": [
+      {
+        "title": "Blinded by the path",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "Linux Nice Guys Finish Last",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "It's Visudo or No Sudo for You!",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "Chill Out it's just kernel having panic attack",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "Lets show them who really is in control",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
     }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
   }
+}
+
