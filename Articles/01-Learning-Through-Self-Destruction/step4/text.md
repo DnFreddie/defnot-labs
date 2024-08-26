@@ -40,7 +40,7 @@ This command sets the maximum number of processes that the user can spawn to 300
 Now let's swich the user 
 
 ```
-su 
+su  user_gonna_use
 ```{{exec}}
 
 
@@ -55,6 +55,11 @@ Run this command and press `Ctrl + C` when you get bored or if the system starts
 If you forgot to to swithch user :) Don't worry systemd got you covered just press Ctrl+C and  wait.
 (*By default, the total number of tasks that systemd allows for each user is usually 33% of the system wide*)
 
-No click  check and move to the tool of the ultimate destruction !!!
+No type `exit ` click  check to move to the tool of the ultimate destruction !!!
+
+```bash
+    exit 
+```{{exec}}
+
 </details>
 

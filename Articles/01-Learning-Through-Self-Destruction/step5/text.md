@@ -5,6 +5,7 @@ Now it’s your turn. Follow the steps  and let your fury out!
 <br>
 <details>
 <summary>Steps</summary>
+
 #### Step 1: Enter the Void
 First, you need to connect to the server.
 Prepare yourself for the journey into the unknown:

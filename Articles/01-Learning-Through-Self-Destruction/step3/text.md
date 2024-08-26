@@ -54,6 +54,13 @@ Try entering any password with the `sudo` command:
 sudo ls
 ```{{exec}}
 As you can see, the `sudo` command has feelings and will check before moving to the next level.
+
+No type `exit ` click  check to move to the next scenario
+
+```bash
+    exit 
+```{{exec}}
+
 </details>
 
 
