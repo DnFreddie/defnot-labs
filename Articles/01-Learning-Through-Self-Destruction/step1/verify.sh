@@ -1,4 +1,3 @@
 #!/bin/bash
+type funny.sh
 
-
-funny.sh

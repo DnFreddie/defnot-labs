@@ -32,24 +32,27 @@ chmod +x ~/scripts/funny.sh
 Now, we can make our system "blind" for a second. You see, it will fall in love with this script so much that it won't see anything else:
 
 ```bash
-export PATH=~/scripts/funny.sh
+export PATH=~/scripts
 ```{{exec}}
 
 Now, try to run any command. I'm sure your Bash shell doesn't see anything other than `funny.sh`. So, how can we fix this?
 
-
 Fortunately, the change we made to the PATH is only temporary.
+To get back the original PATH settings, you can simply run the command exec bash -l.
+This command starts a new Bash shell, which is a type of command line interface, as if you just logged in.
 
-To restore the original PATH settings, we just need to run the `.bashrc` script in this terminal session using the source command.
-This will reload the configuration and bring back the previous settings.
+When it does this, it reads some important system files that set up your environment, including the PATH settings.
+Running this command will refresh your settings and bring back the way things were before.
 
 The usual PATH settings are stored in `/etc/profile`, but **do not change it directly** if you want to add more paths system-wide. Instead, it's much better to create a custom shell script in the `/etc/profile.d/` directory. This way, you can make your custom changes without modifying the main profile file directly.
 
 To restore your PATH, run:
+Or if it doesn't wrok just add new tab in ure terminal or restart it :)
 
 ```bash
-source ~/.bashrc
+exec /user/bin/bash -l 
 ```{{exec}}
+
 
 Now we know everything about the PATH, so we can properly append to it. Here’s how to do it: 
 
