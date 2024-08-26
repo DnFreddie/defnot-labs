@@ -11,7 +11,6 @@ First, you need to connect to the server.
 Prepare yourself for the journey into the unknown:
 
 ```bash
-Copy Code
 ssh node01
 ```{{exec}}
 
