@@ -1,11 +1,14 @@
 #!/bin/bash
+NICE_VALUE=$(ps -o nice= -p $(pgrep -n -f "nice_guy.sh"))
+if [ "$NICE_VALUE" -eq 19 ]; then
+    echo "The nice value of the process is 19."
+    exit 0
 
-ssh node01
-
-exit_code=$?
-
-if [ $exit_code -eq 255 ]; then
-    exit 0  # Exit with code 1 if the exit code is 255
 else
+    echo "The nice value of the process is not 20. It is $NICE_VALUE."
     exit 1 
 fi
+
+
+
+

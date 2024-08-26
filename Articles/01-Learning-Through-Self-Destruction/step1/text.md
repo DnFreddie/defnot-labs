@@ -47,10 +47,11 @@ Running this command will refresh your settings and bring back the way things we
 The usual PATH settings are stored in `/etc/profile`, but **do not change it directly** if you want to add more paths system-wide. Instead, it's much better to create a custom shell script in the `/etc/profile.d/` directory. This way, you can make your custom changes without modifying the main profile file directly.
 
 To restore your PATH, run:
-Or if it doesn't wrok just add new tab in ure terminal or restart it :)
+
+**Or, if that doesn't work, just open a new tab in your terminal! :)**
 
 ```bash
-exec /user/bin/bash -l 
+exec /usr/bin/bash -l 
 ```{{exec}}
 
 
