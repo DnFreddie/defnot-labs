@@ -29,7 +29,7 @@ nice -n -19 ./nice_guy.sh &
 Now, try to run any command. You may notice that the system slows down. Kill the process before it’s too late!
 
 ```bash 
-killall nice_guy.sh
+nice -n -20 killall nice_guy.sh
 ```{{exec}}
 
 Since we know that being "nice" doesn’t pay off that way, the `default value` is **zero**. But I think this process deserves a little less priority, so let’s call this process with a nice value of 20 and call it a day.
