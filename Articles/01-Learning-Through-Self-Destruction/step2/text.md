@@ -26,14 +26,16 @@ nice -n -19 ./nice_guy.sh &
 
 ### Observe the Effects
 
-Now, try to run any command. You may notice that the system slows down. Kill the process before it’s too late!
 
+Now, try to run any command. You may notice that the system slows down. Kill the process before it’s too late!
 ```bash 
 nice -n -20 killall nice_guy.sh
 ```{{exec}}
+**Don't worry about the errors, just wait a couple of seconds and press `Ctrl+C`.**
 
-Since we know that being "nice" doesn’t pay off that way, the `default value` is **zero**. But I think this process deserves a little less priority, so let’s call this process with a nice value of 20 and call it a day.
-Click check after command execution 
+
+Since we know that being "nice" doesn’t pay off that way, the `default value` is **zero**. But I think this process deserves a little less priority, so let’s call this process with a nice value of 19 and call it a day.
+**Click check after command execution!**
 
 ```bash 
 nice -n 19 ./nice_guy.sh &

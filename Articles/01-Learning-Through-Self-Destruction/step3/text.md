@@ -24,11 +24,12 @@ The `visudo` command checks the syntax of the `sudoers` file before saving it, w
 visudo
 ```{{exec}}
 
+
 The `visudo` command will guide you on what to do, so be a good Linux admin and fix the issue.
-You will need to delete the incorrect line. 
+**Press enter to chose the option**
+You will need to delete the incorrect line and save it . 
 
-Now, for the fun part, replace it with this line:
-
+Now, for the fun part, add this line to the sudoers file
 ```bash
 echo "Defaults insults" >> /etc/sudoers
 ```{{exec}}
