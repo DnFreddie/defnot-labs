@@ -1,0 +1,37 @@
+{
+    "title": "POSIX way of containers (systemd)",
+    "description": "Learn how to use systemd containers",
+    "details": {
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
+        },
+        "steps": [
+            {
+                "title": "A tour of .container",
+                "text": "step1/text.md",
+                "verify": "step1/verify.sh"
+            },
+            {
+                "title": "Can you make them linger",
+                "text": "step2/step2.md",
+                "verify": "step2/verify.sh"
+            }
+        ],
+        "assets": {
+            "ubu": [
+                {"file": "assets/Dockerfile", "target": "/home/ubu/quadlet"},
+                {"file": "assets/index.html", "target": "/home/ubu/quadlet"},
+                {"file": "assets/docker-compose", "target": "/home/ubu/quadlet"},
+                {"file": "assets/quadlet.container", "target": "/home/ubu/answers"}
+            ]
+        },
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "ubuntu"
+    }
+}
+

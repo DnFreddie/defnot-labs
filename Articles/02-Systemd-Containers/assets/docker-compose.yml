@@ -1,0 +1,12 @@
+services:
+  quadlet:
+    build: .
+    image: quadlet
+    volumes:
+      #- ./:/app/docs:Z
+      #- /home/data:/app/data:Z
+    ports:
+      - "8000:3000"
+    command: ["http.server", 3000 ]
+
+
