@@ -1,6 +1,6 @@
 {
   "items": [
-    { "path": "01-Learning-Through-Self-Destruction" }
+    { "path": "01-Learning-Through-Self-Destruction" },
     { "path": "02-Systemd-Containers" }
   ]
 }

@@ -1,8 +1,4 @@
-useradd ubu -s /usr/bin/bash -m 
-mkdir -p /home/ubu/quadlet /home/ubu/answers
-chown -R ubu:ubu /home/ubu
-su ubu 
-cd 
-
-
-
+#!/bin/bash
+mv /answers/quadlet /home/ubuntu 
+chown -R ubuntu:ubuntu /home/ubuntu 
+podman build -t try-me /home/ubuntu/quadlet

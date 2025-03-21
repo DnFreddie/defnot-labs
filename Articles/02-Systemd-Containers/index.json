@@ -19,11 +19,11 @@
             }
         ],
         "assets": {
-            "ubu": [
-                {"file": "assets/Dockerfile", "target": "/home/ubu/quadlet"},
-                {"file": "assets/index.html", "target": "/home/ubu/quadlet"},
-                {"file": "assets/docker-compose", "target": "/home/ubu/quadlet"},
-                {"file": "assets/quadlet.container", "target": "/home/ubu/answers"}
+            "ubuntu": [
+                { "file": "Dockerfile", "target": "/answers/quadlet" },
+                { "file": "index.html", "target": "/answers/quadlet" },
+                { "file": "docker-compose.yml", "target": "/answers/quadlet" },
+                { "file": "quadlet.container", "target": "/answers" }
             ]
         },
         "finish": {
@@ -34,4 +34,3 @@
         "imageid": "ubuntu"
     }
 }
-

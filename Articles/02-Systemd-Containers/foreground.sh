@@ -1,0 +1,2 @@
+su  ubuntu
+cd ~
