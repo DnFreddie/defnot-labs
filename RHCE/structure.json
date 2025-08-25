@@ -1,6 +1,7 @@
 {
   "items": [
-    { "path": "01-Config-and-Inventory-Basics" }
+    { "path": "01-Config-and-Inventory-Basics" },
+    { "path": "02-Managing-Packages-and-Repos" }
   ]
 }
 

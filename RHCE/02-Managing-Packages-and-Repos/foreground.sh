@@ -27,4 +27,3 @@ done
 clear
 echo "✅ SETUP COMPLETE! ✅"
 echo "🎉 Your RHCE lab environment is ready!"
-

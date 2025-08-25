@@ -1,0 +1,37 @@
+{
+  "title": "Managing Packages and Repos",
+  "description": "Handle repositories and packages like a pro.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh",
+      "foreground": "foreground.sh"
+    },
+    "steps": [
+      {
+        "title": "Understanding the ansible.cfg",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "Understanding the static inventory",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      }
+    ],
+    "assets": {
+      "host01": [
+        { "file": "01-verify.yml", "target": "~/answers" },
+        { "file": "02-verify.yml", "target": "~/answers" },
+        { "file": "ansible.cfg", "target": "~/" },
+        { "file": "hosts.yml", "target": "~/" }
+      ]
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}

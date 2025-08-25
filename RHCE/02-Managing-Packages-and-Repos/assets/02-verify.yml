@@ -1,0 +1,41 @@
+---
+- hosts: all
+  become: true
+  tasks:
+    - name: Install nginx and postgresql
+      package:
+        name:
+          - nginx
+          - postgresql
+          - e3
+        state: present
+      register: _status
+      check_mode: true
+
+    - name: Verify packages are installed
+      fail:
+        msg: "Required packages are not installed"
+      when: _status.changed
+
+
+    - block:
+        - name: Install Development Tools (build-essential)
+          package:
+            name: build-essential
+            state: present
+          register: dev_tools_status
+          check_mode: true
+
+        - name: Update all packages to latest versions
+          package:
+            name: "*"
+            state: latest
+          register: update_status
+          check_mode: true
+
+        - name: Verify dev packages are installed
+          fail:
+            msg: "Development packages are not properly configured"
+          when: dev_tools_status.changed or update_status.changed
+      when: "'dev' in group_names"
+
